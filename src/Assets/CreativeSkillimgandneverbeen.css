@@ -1,0 +1,364 @@
+.skillimg{
+    background-color: black;
+    width: 100%;
+}
+.skillimg img{
+    width: 100%;
+    height: 80%;
+    /* overflow: hidden; */
+}
+.contentsec2 h1{
+    color: white;
+    font-size:58px;
+}
+.contentsec2{
+    width:67%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.connecttalent{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contentTalent{
+    width: 60%;
+    height:480px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+.connectTalentlogo{
+    width:30%;
+    height:480px;
+    display: flex;
+    align-items: center;
+}
+.contentTalentHead{
+    font-size:38px;
+    font-weight:520!important;
+    font-family: "Montserrat", sans-serif;
+    /* margin-top:35px; */
+}        
+.subcontent-talent{
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    font-size:18px;
+    font-weight: 400;
+    line-height: 2.4;
+    font-family: "Montserrat", sans-serif;
+}
+.contentTalent button{
+    padding: 10px 40px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    background-color:#F3C060;
+    font-weight:600;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.contentTalent button:hover{
+    border: 1px solid #F3C060;
+    background-color: white;
+}
+.subcontent-main{
+    width: 100%;
+    height: 200px;
+    padding-top: 15px;
+}
+.neverbeenContent{
+    text-align: center;
+    margin-top: 20px;
+}
+.phoneimgs{
+    width:100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top:40px;
+}
+.phonesec1{
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    /* border: 1px solid black; */
+
+}
+.phonesec1 p,.phonesec2 p{
+    font-size:20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 490;
+}
+.phonesec2{
+    width: 45%;
+    height: 470px;
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.phoneimgall{
+    width:75%;
+}
+.choose-plan{
+    margin-top:70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.profile-plan{
+    width: 50%;
+    height:1100px;
+    background-color: #E5B655;
+    /* border: 1px solid black; */
+}
+.plandetails{
+    width: 50%;
+    height:1100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    /* border: 1px solid black; */
+}
+.plansimagehome{
+    width:100%;
+    height: 714px;
+    /* border: 1px solid green; */
+}
+.profile-plan-content{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+}
+.profile-plan-content button{
+    background: none;
+    background-color: white;
+    padding: 14px 70px;
+    border-radius: 4px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight:510;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 1px solid white;
+}
+.profile-plan-content button:hover{
+    background-color: #E5B655;
+    border: 1px solid white;
+    color: white;
+    /* border: none; */
+}
+.profile-plan-content p{
+    font-weight: 550;
+    margin-top: 15px;
+}
+.ulOne{
+    width:37%;
+    /* border: 1px solid red; */
+    display:flex ;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+}
+.ulTwo{
+    width:20%;
+    /* border: 1px solid red; */
+    display:flex ;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+}
+.plandetails ul li{
+    padding-left:8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+}
+.ulOne-head{
+    height: 110px;
+    /* opacity: 0; */
+    background-color: #F4F2F3;
+}
+.ulTwo-head{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F4F2F3;
+}
+.ulOne-subcontent li{
+    height: 63px;
+    font-weight:500;
+}
+.ulTwo-subcontent li{
+    height: 63px;
+    text-align: center;
+    font-weight:500;
+}
+.plansBtnHome{
+    background: none;
+    background-color: #E5B655;
+    font-weight: 500;
+    border-radius: 4px;
+    border: 1px solid #E5B655;
+    padding: 6px 8px;
+}
+.plansBtnHome:hover{
+    background-color:white;
+}
+.ulTwo-head img{
+    width: 18px;
+    height: 18px;
+}
+.ribrecommend{
+    font-size:13px;
+    background-image: url(../images/tagribbenplan.svg);
+    width: 100%;
+    height: 20px;
+    padding-left: 10px;
+    background-size: cover;
+}
+
+@media screen and (max-width:1024px) {
+    .phoneimgall{
+        height: 290px;
+    }
+    .profile-plan{
+    width: 100%;
+    }
+    .plansimagehome{
+        height: 800px;
+    }
+    .plandetails{
+        width: 100%;
+    }
+}
+@media screen and (max-width:990px) {
+    .phoneimgall{
+        height: 290px;
+    }
+    .profile-plan{
+    width: 100%;
+    }
+    .plansimagehome{
+        height: 800px;
+    }
+    .plandetails{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    .contentTalentHead{
+        font-size:28px!important;
+    }
+    .subcontent-talent{
+        font-size: 14px!important;
+        font-weight:550!important;
+        line-height:2.8!important;
+    }
+    .contentsec2 h1{
+        font-size:40px;
+    }
+    .phoneimgall{
+        width: 70%;
+        height: 200px;
+    }
+    .phonesec1{
+        height: 300px;
+    }
+    .phonesec2{
+        height: 300px;
+    }
+    .phonesec1 p{
+        font-size: 16px;
+    }
+    .phonesec2 p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:425px){
+    .contentTalent{
+        width: 100%;
+    }
+    .contentsec2 h1{
+        font-size:25px;
+    }
+    .subcontent-talent{
+        font-size: 13px!important;
+        font-weight:550!important;
+        line-height:3.4!important;
+    }
+    .connectTalentlogo{
+        width: 50%;
+    }
+    .phonesec1{
+        width: 100%;
+    }
+    .phonesec2{
+        width: 100%;
+    }
+    .phoneimgall{
+        width: 50%;
+    }
+    .plansimagehome{
+        height:500px;
+    }
+    .profile-plan{
+        height: auto;
+    }
+    .plandetails {
+        width: 100%;
+        height: auto;
+    }
+    .ulOne{
+        width: 40%;
+    }
+    .ulTwo{
+        width: 40%;
+    }
+    .ribrecommend{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:375px){
+.contentTalentHead{
+    font-size:25px!important;
+}
+.ulOne{
+    width: 45%;
+}
+.ulTwo{
+    width: 40%;
+}
+}
+@media screen and (max-width:320px){
+.connectTalentlogo{
+    width:40%;
+    display:flex;
+    justify-content: center;
+}
+.phoneimgall{
+    width: 60%;
+    height:180px;
+}
+.phonesec1{
+    width: 100%;
+}
+.phonesec2{
+    width:100%;
+}
+.ulOne{
+    width: 55%;
+    font-size: 14px!important;
+}
+.ulTwo{
+    width: 40%;
+}
+}

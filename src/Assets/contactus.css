@@ -1,0 +1,151 @@
+.contactmain{
+    width: 100%;
+    margin-top:120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.contacthead{
+    /* margin-top:150px; */
+    width: 100%;
+    text-align: center;
+}
+.contactform{
+    /* border: 1px solid black; */
+    width:60%;
+    display: flex;
+    justify-content: center;
+}
+.contactmainform{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+     /* border: 1px solid black; */
+}
+.contacthead h2{
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+}
+.contacthead p{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+.maillogocontact{
+    font-size: 25px;
+}
+.contactmainform input{
+    border: none;
+}
+.contactmainform textarea{
+    border: none;
+}
+.contactmainform input:focus{
+    border-bottom: 2px solid  #F3C060;
+    outline: none;
+    border-radius: 6px;
+}
+.contactmainform textarea:focus{
+    border: 2px solid  #F3C060;
+    outline: none;
+    border-radius: 6px;
+}
+.contactmainform div{
+    display: flex;
+    justify-content: center;
+}
+.contactmainform button{
+    padding: 6px 60px;
+    background-color: #F3C060;
+    border: 1px solid #F3C060;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 550;
+    border-radius: 6px;
+}
+.contactmainform button:hover{
+    background-color: white;
+
+}
+.thanksmsg{
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+.thanksimg{
+    width: 90%;
+    /* height: 300px; */
+    text-align: center;
+    /* border: 1px solid black; */
+}
+.messeagecard{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(202, 200, 200);
+    padding-bottom: 40px;
+}
+.messeagecard p{
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+}
+.messeagecard button{
+    font-family: "Montserrat", sans-serif;
+    border: 1px solid #F3C060;
+    background-color: #F3C060 ;
+    font-weight: 600;
+    padding: 6px 30px;
+    border-radius: 6px;
+}
+.messeagecard button:hover{
+background: none;
+}
+@media screen and (max-width:768px){
+    .contactmainform{
+        width:70%;
+    }
+    .contactform{
+        width:65% ;
+    }
+    .contactmain{
+        margin-top:80px;
+    }
+    .messeagecard{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .contactmainform{
+        width:100%;
+    }
+    .contactform{
+        width:75% ;
+    }
+    .contacthead{
+        width:85% ;
+        font-weight: 550;
+    }
+    .messeagecard{
+        width: 85%;
+    }
+    .thanksimg{
+        width: 100%;
+    }
+    .messeagecard p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:375px){
+
+}
+@media screen and (max-width:320px){
+    .messeagecard{
+        width: 95%;
+    }
+}

@@ -1,0 +1,379 @@
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+}
+
+.menubar {
+    list-style-type: none;
+    color: white;
+    display: none;
+}
+
+.navitems {
+    margin-top: 12px;
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    width: 84%;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    /* height:80px; */
+    align-items: center;
+}
+.navitems li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navitems li a.active {
+    color: #F3C060;
+}
+
+/* Section-1 Backgroundvideo */
+.vidletsmain {
+    width: 100%;
+}
+
+.videoback {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    background-color: black;
+}
+
+.textHead {
+    position: absolute;
+    /* overflow: hidden; */
+    top: 20%;
+    color: white;
+    /* left: 4%; */
+    padding-left: 50px;
+    width: 100%;
+}
+
+.textWrapper {
+    overflow: hidden;
+    color: white;
+    /* border: 2px solid yellow; */
+    width: 45%;
+    height: 180px;
+    position: relative;
+    /* border: 1px solid red; */
+}
+
+.textSlide {
+    font-family: "Montserrat";
+    position: absolute;
+    top: 20%;
+    opacity: 0;
+    /* border: 1px solid red; */
+}
+
+.textSlide h2 {
+    font-size: 45px;
+}
+
+.subtext {
+    font-family: "Montserrat" !important;
+    font-size: 15px !important;
+}
+
+.textSlide:nth-child(1) {
+    animation: slideUp 18s linear infinite 0s;
+}
+
+.textSlide:nth-child(2) {
+    animation: slideUp 18s linear infinite 3s;
+}
+
+.textSlide:nth-child(3) {
+    animation: slideUp 18s linear infinite 6s;
+}
+
+.textSlide:nth-child(4) {
+    animation: slideUp 18s linear infinite 9s;
+}
+
+.textSlide:nth-child(5) {
+    animation: slideUp 18s linear infinite 12s;
+}
+
+.textSlide:nth-child(6) {
+    animation: slideUp 18s linear infinite 15s;
+}
+
+@keyframes slideUp {
+
+    0%,
+    16% {
+        top: 100%;
+        opacity: 0;
+    }
+
+    18%,
+    33% {
+        top: 0;
+        opacity: 1;
+    }
+
+    36%,
+    100% {
+        top: -100%;
+        opacity: 0;
+    }
+}
+
+.btnjoinourcom {
+    font-family: "Montserrat";
+    font-weight: 500;
+    padding: 10px 20px;
+    background-color: #F3C060;
+    border: none;
+    font-size: 17px;
+    border-radius: 8px;
+    margin-top: 2%;
+}
+
+.textWrap2 {
+    /* border: 2px solid green; */
+    margin-top: 24px;
+    /* height:85px; */
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    border: 2px solid #F3C060;
+    border-right-style: hidden;
+}
+
+.textSlide2 h2 {
+    font-family: "Montserrat";
+    font-size: 40px;
+}
+
+.featured-slide-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-top: 8%;
+}
+
+.featured-slide-main div:first-child {
+    color: white;
+    font-weight: 500;
+}
+
+.f-slide {
+    width: 80%;
+    /* height: 116px; */
+    display: flex;
+    overflow: hidden;
+}
+
+.slidelogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    animation: logoslide 20s infinite linear;
+}
+
+@keyframes logoslide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* .vidletsres{
+    display: none;
+    width:100%;
+    min-height:100vh;
+} */
+.vidletsresmain {
+    display: none;
+    width: 100%;
+}
+
+@media screen and (max-width:1024px) {
+    .card-individual div>p {
+        font-size: 15px;
+    }
+
+    .vidletsmain {
+        width: 100%;
+        margin-top: 10%;
+        /* height: 100vh; */
+    }
+
+    .textSlide h2 {
+        font-size: 30px;
+    }
+
+    .featured-slide-main {
+        margin-top: 5%;
+    }
+
+    /* .textHead{
+    top:18%;
+} */
+}
+
+@media screen and (max-width:990px) {
+    .card-individual div>p {
+        font-size: 15px;
+    }
+
+    .vidletsmain {
+        width: 100%;
+    }
+
+    .textSlide h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navitems {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        gap: 0;
+    }
+     
+    .navitems.open {
+        display: flex;
+    }
+    .navitems li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menubar {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+    .textSlide h2 {
+        font-size: 25px !important;
+    }
+
+    .textWrapper {
+        width: 70%;
+        height: 130px;
+    }
+
+    .featured-slide-main div:first-child {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .vidletsmain {
+        display: none;
+    }
+    .vidletsresmain {
+        display: block;
+        width: 100%;
+    }
+
+    .textWrapper {
+        width: 85%;
+    }
+
+    .textSlide h2 {
+        font-size: 18px !important;
+    }
+
+    .subtext {
+        font-size: 14px !important;
+    }
+
+    .textWrapper {
+        height: 120px;
+    }
+
+    .btnjoinourcom {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .textWrap2 {
+        width: 60%;
+        margin-top: 6px;
+        display: flex;
+    }
+
+    .featured-slide-main {
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    .textSlide2 h2 {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .textHead {
+        top: 25%;
+        padding-left: 10px;
+    }
+
+    .subtext {
+        font-size: 13px !important;
+    }
+
+    .slidelogo img {
+        width: 30%;
+        height: 30px;
+    }
+
+    .featured-slide-main {
+        gap: 0px;
+    }
+
+    .featured-slide-main div:first-child {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .f-slide {
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px){
+    .textWrapper{
+        width:92%;
+    }
+}

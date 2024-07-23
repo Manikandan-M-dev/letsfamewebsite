@@ -1,0 +1,42 @@
+
+  .storySwiper{
+    width:75%;
+    height: 100%;
+  }
+  .card-individual {
+    width:95%;
+    display: flex;
+   flex-direction: column; 
+   background-color: black!important;
+   height:720px;
+   justify-content: space-between;
+   align-items:end;
+ }
+ 
+ .card-individual img {
+   width:100%;
+   height:380px;
+   border-radius:15px;
+   object-fit: cover;
+ }
+ .card-individual div>p{
+   color:white;
+   font-family: "Montserrat", sans-serif;
+   text-align: start;
+ }
+ .storycontents{
+   text-align: end;
+ }
+ .card-individual h5{ 
+   color: white;
+   font-family: "Montserrat", sans-serif;
+   font-weight: bold;
+ }
+ .card-individual h6{
+   color: white;
+   font-family: "Montserrat", sans-serif;
+   font-weight: bold;
+ }
+ .card-individual span{
+   color: #F3C060;
+ }
