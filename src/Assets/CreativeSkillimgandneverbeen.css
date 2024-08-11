@@ -105,6 +105,7 @@
 }
 .phoneimgall{
     width:75%;
+    height: auto;
 }
 .choose-plan{
     margin-top:70px;
@@ -120,7 +121,7 @@
 }
 .plandetails{
     width: 50%;
-    height:1100px;
+    height:auto;
     display: flex;
     flex-wrap: wrap;
     justify-content:space-around;
@@ -128,7 +129,7 @@
 }
 .plansimagehome{
     width:100%;
-    height: 714px;
+    height:auto;
     /* border: 1px solid green; */
 }
 .profile-plan-content{
@@ -226,9 +227,9 @@
 }
 
 @media screen and (max-width:1024px) {
-    .phoneimgall{
+    /* .phoneimgall{
         height: 290px;
-    }
+    } */
     .profile-plan{
     width: 100%;
     }
@@ -240,9 +241,9 @@
     }
 }
 @media screen and (max-width:990px) {
-    .phoneimgall{
+    /* .phoneimgall{
         height: 290px;
-    }
+    } */
     .profile-plan{
     width: 100%;
     }
@@ -253,6 +254,7 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width:768px){
     .contentTalentHead{
         font-size:28px!important;
@@ -267,7 +269,7 @@
     }
     .phoneimgall{
         width: 70%;
-        height: 200px;
+        /* height: 200px; */
     }
     .phonesec1{
         height: 300px;
@@ -282,7 +284,30 @@
         font-size: 16px;
     }
 }
-@media screen and (max-width:425px){
+@media screen and (max-width:767px) {
+    .contentTalent{
+        width: 100%;
+    }
+}
+@media screen and (max-width:545px){
+    .profile-plan{
+        height: auto;
+    }
+    .plandetails {
+        width: 100%;
+        height: auto;
+    }
+    .ulOne{
+        width: 40%;
+    }
+    .ulTwo{
+        width: 40%;
+    }
+    .ribrecommend{
+        text-align: center;
+    }
+}
+@media screen and (max-width:425px) {
     .contentTalent{
         width: 100%;
     }
@@ -326,8 +351,15 @@
         text-align: center;
     }
 }
-
-@media screen and (max-width:375px){
+@media screen and (max-width:419px){
+    .ulOne{
+        width: 45%;
+    }
+    .ulTwo{
+        width: 40%;
+    }
+}
+@media screen and (max-width:375px) {
 .contentTalentHead{
     font-size:25px!important;
 }
@@ -338,6 +370,22 @@
     width: 40%;
 }
 }
+@media screen and (max-width:372px) {
+    .ulOne{
+        width: 46%;
+    }
+    .ulTwo{
+        width: 43%;
+    }
+}
+@media screen and (max-width:364px) {
+    .ulOne{
+        width: 48%;
+    }
+    .ulTwo{
+        width: 47%;
+    }
+}
 @media screen and (max-width:320px){
 .connectTalentlogo{
     width:40%;
@@ -346,7 +394,7 @@
 }
 .phoneimgall{
     width: 60%;
-    height:180px;
+    /* height:180px; */
 }
 .phonesec1{
     width: 100%;

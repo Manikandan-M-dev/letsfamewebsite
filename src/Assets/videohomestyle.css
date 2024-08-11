@@ -183,6 +183,7 @@ nav {
     /* height: 116px; */
     display: flex;
     overflow: hidden;
+    /* border: 1px solid black; */
 }
 
 .slidelogo {
@@ -240,7 +241,6 @@ nav {
     top:18%;
 } */
 }
-
 @media screen and (max-width:990px) {
     .card-individual div>p {
         font-size: 15px;
@@ -254,8 +254,50 @@ nav {
         font-size: 30px;
     }
 }
+@media screen and (max-width:900px){
+    .navitems {
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        gap: 0;
+    }
+     
+    .navitems.open {
+        display: flex;
+    }
+    .navitems li {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .menubar {
+        display: block;
+        color: white;
+        font-size: 30px;
+    }
+
+}
+@media screen and (max-width:831px) {
+    .featured-slide-main div:first-child {
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
 
 @media screen and (max-width:768px) {
+    .vidletsmain {
+        display: none;
+    }
+    .vidletsresmain {
+        display: block;
+        width: 100%;
+    }
     .navitems {
         display:none;
         flex-direction: column;
@@ -290,14 +332,40 @@ nav {
         width: 70%;
         height: 130px;
     }
+    .textWrap2 {
+        width: 60%;
+        margin-top: 6px;
+        display: flex;
+    }
 
     .featured-slide-main div:first-child {
         color: white;
         font-size: 14px;
         font-weight: 400;
     }
-}
+    .featured-slide-main {
+        width: 100%;
+        margin-top: 1%;
+    }
+    .featured-slide-main {
+        gap: 0px;
+    }
 
+    .featured-slide-main div:first-child {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .f-slide {
+        width: 100%;
+    }
+}
+@media screen and (max-width:648px){
+    .textWrapper {
+        width: 85%;
+    }
+} 
 @media screen and (max-width:425px) {
     .vidletsmain {
         display: none;
@@ -324,8 +392,8 @@ nav {
     }
 
     .btnjoinourcom {
-        padding: 6px 10px;
-        font-size: 14px;
+        padding: 5px 9px;
+        font-size: 13px;
     }
 
     .textWrap2 {

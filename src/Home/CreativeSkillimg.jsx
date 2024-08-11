@@ -12,7 +12,7 @@ export default function CreativeSkillimg() {
     <>
       <div className="skillimg">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <img src={mobilescol1} alt=""/> 
+          <img src={mobilescol1} alt="" />
         </div>
         <div className="contentsec2">
           <h1>All your creative skills &<br />experience in one place</h1>
@@ -38,11 +38,15 @@ export default function CreativeSkillimg() {
             <div className="subcontent-talent">
               <img src={marketlogo} alt="cutlogo" style={{ width: "30px", height: "30px" }} />&nbsp;&nbsp;Network with Industry Professionals
             </div>
-                <button>Join LetsFAME</button>
+            <button>Join LetsFAME</button>
           </div>
         </div>
         <div className="connectTalentlogo">
-          <div><div data-aos="zoom-in-left" data-aos-duration="2000"><img src={greylogoletsfame} alt="" /></div>  </div>
+          <div>
+            <div data-aos="zoom-in-left" data-aos-duration="2000">
+              <img src={greylogoletsfame} alt="" />
+            </div> 
+           </div>
         </div>
       </div>
     </>

@@ -2,18 +2,21 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    
+    /* border: 1px solid green; */
+    padding: 30px 0px;
 }
 .footercontent1{
         width: 50%;
-        height: 380px;
+        /* height: 380px; */
         /* border: 1px solid green; */
         display: flex;
         align-items: center;
 }
 .footercontent2{
     width: 50%;
-    height: 380px;
+    /* height: 380px; */
     /* border: 1px solid red; */
     display: flex;
     align-items: center;
@@ -58,7 +61,7 @@ footer{
 }
 .footercontent2 ul li:first-child{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
 }
 .footerbtn{
@@ -95,6 +98,21 @@ hr{
         font-size:30px!important;
     }
 }
+@media screen and (max-width:990px){
+    .footerconcrehead{
+        font-size:25px!important;
+    }
+    .footermain{
+        width: 100%;
+    }
+    .footercontent1{
+        width: 40%;
+    }
+    .footercontent2{
+        width: 60%;
+        /* justify-content: center; */
+    }
+}
 @media screen and (max-width:768px){
     .footerconcrehead{
         font-size:25px!important;
@@ -108,15 +126,28 @@ hr{
     .footercontent2{
         width: 60%;
         /* padding: 0px; */
-        justify-content: center;
+        /* justify-content: center; */
     }
+}
+@media screen and (max-width:767px){
+    .footercontent1{
+        width: 100%;
+        }
+        .footercontent2{
+            width: 100%;
+        }
 }
 @media screen and (max-width:425px){
 .footercontent1{
 width: 100%;
+padding: 0px 8px;
 }
 .footercontent2{
     width: 100%;
+    padding: 0px 8px;
+}
+.footerconcrehead{
+    font-size:20px!important;
 }
 }
 @media screen and (max-width:375px){

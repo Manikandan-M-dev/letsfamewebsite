@@ -52,10 +52,23 @@ font-size: 30px;
         font-size: 30px;
     }
 }
-
+@media screen and (max-width:767px) {
+    .textcontentconnect1{
+        width: 100%;
+    }
+    .textcontentconnect2{
+        width: 100%;
+    }
+}
 @media screen and (max-width:425px){
     .textcontentconnect1 h1{
-        font-size: 30px;
+        font-size: 20px;
+    }
+    .textcontentconnect1 h3{
+        font-size: 20px;
+    }
+    .textcontentconnect2 p{
+        font-size: 16px;
     }
     .textcontentconnect1{
         width: 100%;
